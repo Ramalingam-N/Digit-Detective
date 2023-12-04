@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Digit Detective</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="div">
+            <h1>DIGIT DETECTIVE</h1>
+            <h3>Guess between 1 to 1000</h3>
+            <input
+                type="text"
+                class="input"
+                name="guess"
+                autofocus="true"
+                placeholder=" -?-"
+            />
+            <br />
+            <button class="check btn">Check</button>
+            <button class="reset btn">Reset</button>
+            <h4>Chances left : 10</h4>
+            <div class="numbers">
+                <h5></h5>
+                <h6 class="txt">Guessed number is high.....</h6>
+            </div>
+        </div>
+        <video id="video" autoplay style="display: none"></video>
+        <canvas
+            id="canvas"
+            width="640"
+            height="480"
+            style="display: none"
+        ></canvas>
+        <script src="app.js"></script>
+    </body>
+</html>
