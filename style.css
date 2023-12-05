@@ -1,5 +1,5 @@
 body {
-    width: 90vw;
+    /* width: 100vw; */
     height: 88vh;
     background: linear-gradient(
         to right,
@@ -8,14 +8,18 @@ body {
     );
 }
 .div {
-    width: 100%;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding-bottom: 2px;
+    box-shadow: 5px 6px 10px 6px rgba(0, 0, 0, 0.09);
     /* height: 100vh; */
 }
 h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 60px;
-    margin-left: 88px;
+    /* margin-left: 88px; */
     color: rgba(23, 27, 9, 0.8);
 }
 
@@ -24,8 +28,8 @@ h3 {
     font-size: 28px;
     font-weight: 200;
     font-style: italic;
-    margin-top: 30px;
-    margin-left: 88px;
+    /* margin-top: 30px;
+    margin-left: 88px; */
     color: rgba(23, 27, 9, 0.8);
 }
 
@@ -34,7 +38,7 @@ h4 {
     font-size: 28px;
     font-weight: 540;
     margin-top: 30px;
-    margin-left: 82px;
+    /* margin-left: 82px; */
     color: rgba(23, 27, 9, 0.8);
 }
 
@@ -42,17 +46,33 @@ h4 {
     background-color: #1a1a16;
     border: none;
     height: 80px;
+    justify-content: center;
     width: 91px;
-    margin-left: 605px;
+    margin-left: 43%;
     font-size: 50px;
     border-radius: 14px;
     color: rgba(224, 238, 251, 0.886);
 }
 
+.button {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 12px 36px;
+    border-radius: 6px;
+}
 .check {
-    margin-left: 510px;
+    /* margin-left: 510px; */
     margin-top: 40px;
-    margin-right: 40px;
+    /* margin-left: 31%; */
+    margin-right: 9%;
     background-color: rgb(237, 254, 159);
     /* transform: rotate(45deg); */
 }
@@ -79,35 +99,29 @@ h4 {
 
 .reset {
     background-color: #1a1a163e;
-}
-
-.btn {
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    padding: 12px 36px;
-    border-radius: 6px;
+    /* margin-right: 10%; */
 }
 
 .numbers {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 h5 {
     font-size: 22px;
     font-weight: 300;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .txt {
     font-size: 20px;
     font-style: italic;
-    margin-left: 480px;
+    margin-left: 25%;
     font-weight: 500;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 310px;
+
     padding: 14px 28px;
     border-radius: 10px;
     margin-top: -10px;
@@ -118,6 +132,68 @@ h5 {
     /* transform: rotateX(50deg); */
 }
 
+@media screen and (max-width: 1299px) {
+    .check {
+        width: 45%;
+        margin-bottom: 10%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+    .reset {
+        width: 45%;
+        margin-bottom: 2%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    .numbers {
+        margin-left: auto;
+        width: 70%;
+        margin-right: auto;
+    }
+
+    .txt {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    .button {
+        width: fit-content;
+        /* background-color: aqua; */
+    }
+    .check {
+        width: 15%;
+        margin-bottom: 1%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+    .reset {
+        width: 35%;
+        margin-bottom: 2%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .button {
+        width: 70%;
+    }
+    .check {
+        width: 45%;
+        margin-bottom: 10%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+    .reset {
+        width: 45%;
+        margin-bottom: 2%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+}
 @keyframes shaking {
     0% {
         transform: rotate(10deg);
